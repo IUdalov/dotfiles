@@ -6,6 +6,7 @@ alias apr="apt-get remove"
 alias api="apt-get install"
 alias apcp="apt-cache policy"
 alias apcn="apt-cache pkgnames"
+alias apu="apt-get update -qq"
 alias sapr="sudo apt-get remove"
 alias sapi="sudo apt-get install"
 alias sapcp="sudo apt-cache policy"
@@ -17,7 +18,7 @@ alias gti=git
 alias st="git st"
 alias gw=./gradlew
 
-export ZSH_THEME="clean"
+export ZSH_THEME="wierd"
 export DEBFULLNAME='Ilia Udalov'
 export DEBEMAIL='iudalov@yandex-team.ru'
 export GNUPGHOME=~/.gnupg/
@@ -29,3 +30,4 @@ zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 setopt autocd # libs/mapkit
 setopt extendedglob # ls **/*gradle
 autoload -U colors && colors
+
