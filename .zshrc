@@ -11,6 +11,7 @@ alias sapr="sudo apt-get remove"
 alias sapi="sudo apt-get install"
 alias sapcp="sudo apt-cache policy"
 alias sapcn="sudo apt-cache pkgnames"
+alias apu="apt-get update -qq"
 alias gradle="gradle --no-daemon"
 alias gr="gradle --daemon --parallel --max-workers=5"
 alias mkdor=cowsay
