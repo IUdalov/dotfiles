@@ -1,0 +1,11 @@
+{
+    "draw_white_space": "all",
+    "file_exclude_patterns": "*.back",
+    "font_size": 14,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "index_files": true,
+    "translate_tabs_to_spaces": true
+}

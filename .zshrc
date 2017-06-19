@@ -18,6 +18,7 @@ alias mkdor=cowsay
 alias gti=git
 alias st="git st"
 alias gw=./gradlew
+# git config --global oh-my-zsh.hide-status 1
 
 export ZSH_THEME="wierd"
 export DEBFULLNAME='Ilia Udalov'
