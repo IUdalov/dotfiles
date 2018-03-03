@@ -18,6 +18,8 @@ alias mkdor=cowsay
 alias gti=git
 alias st="git st"
 alias gw=./gradlew
+alias hs="stack"
+alias svn_clean="svn status | grep '^?' | awk '{print $2}' | xargs rm -rf"
 # git config --global oh-my-zsh.hide-status 1
 
 export ZSH_THEME="wierd"
