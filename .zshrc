@@ -17,6 +17,7 @@ alias gr="gradle --daemon --parallel --max-workers=5"
 alias mkdor=cowsay
 alias gti=git
 alias st="git st"
+alias gg="git grep"
 alias gw=./gradlew
 alias hs="stack"
 alias svn_clean="svn status | grep '^?' | awk '{print $2}' | xargs rm -rf"
