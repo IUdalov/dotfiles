@@ -1,6 +1,6 @@
 alias zshconfig="vim ~/.zshrc"
 alias s="sudo"
-alias m="make -j6"
+alias m="make -j12"
 alias ll='ls -lah'
 alias apr="apt-get remove"
 alias api="apt-get install"
@@ -16,11 +16,13 @@ alias gradle="gradle --no-daemon"
 alias gr="gradle --daemon --parallel --max-workers=5"
 alias mkdor=cowsay
 alias gti=git
+alias gg="git grep"
 alias st="git st"
 alias gg="git grep"
 alias gw=./gradlew
-alias hs="stack"
-alias svn_clean="svn status | grep '^?' | awk '{print $2}' | xargs rm -rf"
+alias svn_clean="svn status | grep '^?' | awk '{print \$2}' | xargs rm -rf"
+alias sc="svn revert -R . && svn st | awk '{print \$2}' | xargs rm -fr && svn up"
+alias scl="svn diff | colordiff | less"
 # git config --global oh-my-zsh.hide-status 1
 
 export ZSH_THEME="wierd"
@@ -34,5 +36,6 @@ zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 # setopt correctall # fins
 setopt autocd # libs/mapkit
 setopt extendedglob # ls **/*gradle
-autoload -U colors && colors
+#autoload -U colors && colors:
 
+export PATH="$PATH:$HOME/bin:$GEM_HOME/bin"
